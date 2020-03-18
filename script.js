@@ -1,33 +1,32 @@
-// Кнопки
 var buttonInPerson = document.getElementById("in-person");
 var buttonOutPerson = document.getElementById("out-person");
 var buttonInMinus = document.getElementById("in-minus");
 var buttonOutMinus = document.getElementById("out-minus");
 
-// Счетчики
-var countIn = 0;
-var countOut = 0;
 
-// Результаты
 var resultIn = document.getElementById("result-in");
 var resultOut = document.getElementById("result-out");
 
-// При нажатии на кнопки входа/выхода изменять счетчик
+
 buttonInPerson.onclick = function() {
-  countIn += 1;
-  resultIn.innerHTML = "In count: " + countIn;
+	var countIn = Number(document.getElementById("result-in").value);
+	countIn += 1
+  document.getElementById("result-in").value = countIn;
 };
 buttonOutPerson.onclick = function() {
+  var countOut = Number(document.getElementById("result-out").value);
   countOut += 1;
-  resultOut.innerHTML = "Out count: " + countOut;
+  document.getElementById("result-out").value = countOut;
 };
 
-// При нажатии на кнопки "-" вычетать из счетчика ошибочный клик
+
 buttonInMinus.onclick = function() {
+	var countIn = Number(document.getElementById("result-in").value);
   countIn -= 1;
-  resultIn.innerHTML = "In count: " + countIn;
+  document.getElementById("result-in").value = countIn;
 };
 buttonOutMinus.onclick = function() {
+	var countOut = Number(document.getElementById("result-out").value);
   countOut -= 1;
-  resultOut.innerHTML = "Out count: " + countOut;
+  document.getElementById("result-out").value = countOut;
 };
