@@ -44,18 +44,10 @@ input {
   margin-top: -20px;
 }
 
-#in-person {
+#in-person, #in-minus{
   background-color: #54a0ff;
 }
 
-#out-person {
-  background-color: #ee5253;
-}
-
-#in-minus {
-  background-color: #54a0ff;
-}
-
-#out-minus {
+#out-person, #out-minus {
   background-color: #ee5253;
 }
