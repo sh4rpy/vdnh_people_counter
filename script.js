@@ -20,6 +20,41 @@ buttonOutPerson.onclick = function() {
 };
 
 
+document.addEventListener('keydown', function(event) {
+  if (event.code == 'ArrowUp') {
+    var countIn = Number(document.getElementById("result-in").value);
+    countIn += 1
+    document.getElementById("result-in").value = countIn;
+    
+  }
+});
+document.addEventListener('keydown', function(event) {
+  if (event.code == 'ArrowDown') {
+    var countOut = Number(document.getElementById("result-out").value);
+    countOut += 1;
+    document.getElementById("result-out").value = countOut
+  }
+});
+
+
+document.addEventListener('keydown', function(event) {
+  if (event.code == 'ArrowLeft') {
+    var countIn = Number(document.getElementById("result-in").value);
+    countIn -= 1
+    document.getElementById("result-in").value = countIn;
+    
+  }
+});
+document.addEventListener('keydown', function(event) {
+  if (event.code == 'ArrowRight') {
+    var countOut = Number(document.getElementById("result-out").value);
+    countOut -= 1;
+    document.getElementById("result-out").value = countOut
+  }
+});
+
+
+
 buttonInMinus.onclick = function() {
 	var countIn = Number(document.getElementById("result-in").value);
   countIn -= 1;
