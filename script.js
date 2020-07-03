@@ -8,6 +8,7 @@ var resultIn = document.getElementById("result-in");
 var resultOut = document.getElementById("result-out");
 
 
+// Увеличение с помощью экранных кнопок
 buttonInPerson.onclick = function() {
 	var countIn = Number(document.getElementById("result-in").value);
 	countIn += 1
@@ -20,6 +21,7 @@ buttonOutPerson.onclick = function() {
 };
 
 
+// Увеличение с помощью клавиатуры
 document.addEventListener('keydown', function(event) {
   if (event.code == 'ArrowUp') {
     var countIn = Number(document.getElementById("result-in").value);
@@ -37,6 +39,20 @@ document.addEventListener('keydown', function(event) {
 });
 
 
+// Уменьшение с помощью экранных кнопок
+buttonInMinus.onclick = function() {
+	var countIn = Number(document.getElementById("result-in").value);
+  countIn -= 1;
+  document.getElementById("result-in").value = countIn;
+};
+buttonOutMinus.onclick = function() {
+	var countOut = Number(document.getElementById("result-out").value);
+  countOut -= 1;
+  document.getElementById("result-out").value = countOut;
+};
+
+
+// Увеличение с помощью клавиатуры
 document.addEventListener('keydown', function(event) {
   if (event.code == 'ArrowLeft') {
     var countIn = Number(document.getElementById("result-in").value);
@@ -52,16 +68,3 @@ document.addEventListener('keydown', function(event) {
     document.getElementById("result-out").value = countOut
   }
 });
-
-
-
-buttonInMinus.onclick = function() {
-	var countIn = Number(document.getElementById("result-in").value);
-  countIn -= 1;
-  document.getElementById("result-in").value = countIn;
-};
-buttonOutMinus.onclick = function() {
-	var countOut = Number(document.getElementById("result-out").value);
-  countOut -= 1;
-  document.getElementById("result-out").value = countOut;
-};
