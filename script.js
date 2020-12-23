@@ -50,7 +50,7 @@ document.addEventListener('keydown', function(event) {
     document.getElementById("result-out").value = countOut
   }
 });
-// Увеличение с помощью клавиатуры
+// Уменьшение с помощью клавиатуры
 document.addEventListener('keydown', function(event) {
   if (event.code == 'ArrowLeft') {
     var countIn = Number(document.getElementById("result-in").value);
