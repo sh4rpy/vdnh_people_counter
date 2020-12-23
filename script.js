@@ -4,6 +4,7 @@ var buttonOutPerson = document.getElementById("out-person");
 var buttonInMinus = document.getElementById("in-minus");
 var buttonOutMinus = document.getElementById("out-minus");
 
+
 // Вывод числа вошедших/вышедших
 var resultIn = document.getElementById("result-in");
 var resultOut = document.getElementById("result-out");
