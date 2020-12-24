@@ -1,7 +1,7 @@
 // Увеличение/уменьшение с помощью экранных кнопок
 function increaseOrDecrease(elementId, operator) {
   let count = Number(document.getElementById(elementId).value);
-  const result = operator == 'increase' ? count += 1 : count -= 1
+  operator == 'increase' ? count += 1 : count -= 1
   document.getElementById(elementId).value = count;
 }
 
