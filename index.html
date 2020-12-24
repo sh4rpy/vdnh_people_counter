@@ -1,28 +1,22 @@
 <html>
-
 <head>
   <meta charset="UTF-8">
   <title>People counter</title>
   <link href="style.css" rel="stylesheet">
 </head>
-
 <body>
   <div class="main">
-
     <h3>People counter</h3>
-
-    <button id="in-person">▲</button>
-    <button id="out-person">▼</button>
-    <button id="in-minus">-</button>
-    <button id="out-minus">-</button><br>
+    <button id="in-person" onclick="increaseOrDecrease('result-in', 'increase')">+</button>
+    <button id="out-person" onclick="increaseOrDecrease('result-out', 'increase')">+</button>
+    <button id="in-minus" onclick="increaseOrDecrease('result-in', 'decrease')">-</button>
+    <button id="out-minus" onclick="increaseOrDecrease('result-out', 'decrease')">-</button><br>
 
     <p>People in:</p>
     <input id="result-in" value="0"><br>
     <p>People out:</p>
     <input id="result-out" value="0">
-
   </div>
   <script src="script.js"></script>
 </body>
-
 </html>
