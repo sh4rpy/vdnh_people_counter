@@ -28,8 +28,8 @@ button {
 }
 
 input {
+  border: solid 1px;
   outline: none;
-  border: none;
   padding: 10px;
   background-color: #1e272e;
   color: #fff;
@@ -37,6 +37,14 @@ input {
   font-size: 18pt;
   text-align: center;
   margin-top: -20px;
+}
+
+#result-in {
+  border-color: #54a0ff;
+}
+
+#result-out {
+  border-color: #ee5253;
 }
 
 #in-person, #in-minus{
